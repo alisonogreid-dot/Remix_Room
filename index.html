@@ -1,0 +1,308 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reason, Rights & the Launch</title>
+<meta name="description" content="Week 48 companion site for MYP2 Ideas in Motion: the Enlightenment and the social contract, and the launch of the Remix Room investigation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FDFAF6; --text:#1A1A1A; --accent-orange:#E8451C; --accent-pink:#E91E90;
+  --accent-yellow:#F5C518; --accent-terra:#C4572A; --accent-olive:#6B7D3A;
+  --surface:#FFFFFF; --border:#E8E0D8; --muted:#8C7E72;
+  --head:'Barlow Condensed',system-ui,sans-serif; --body:'Source Sans 3',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#211D19;--text:#F3EDE6;--surface:#2C2723;--border:#413A33;--muted:#B6A99C;}}
+:root[data-theme="dark"]{--bg:#211D19;--text:#F3EDE6;--surface:#2C2723;--border:#413A33;--muted:#B6A99C;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;font-size:17px;-webkit-text-size-adjust:100%}
+.bar{height:6px;background:linear-gradient(90deg,var(--accent-pink),var(--accent-orange) 55%,#F0873F)}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px 64px}
+header.top{padding:28px 0 8px}
+.tag{display:inline-block;font-family:var(--body);font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#fff;padding:4px 12px;border-radius:999px;background:linear-gradient(90deg,var(--accent-orange),var(--accent-pink))}
+h1{font-family:var(--head);text-transform:uppercase;font-weight:700;font-size:clamp(30px,6vw,50px);line-height:.98;margin:14px 0 6px;letter-spacing:.01em}
+.kq{font-size:clamp(17px,2.4vw,20px);color:var(--muted);font-weight:600;margin:0 0 4px}
+h2{font-family:var(--head);text-transform:uppercase;font-weight:700;font-size:clamp(22px,4vw,30px);margin:6px 0 4px;letter-spacing:.01em}
+h3{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:20px;letter-spacing:.02em;margin:2px 0 8px;color:var(--accent-terra)}
+p{margin:.5em 0}.lead{font-size:18px}.muted{color:var(--muted)}strong{font-weight:700}
+a{color:var(--accent-orange);font-weight:600}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0;border-bottom:2px solid var(--border);margin-top:8px}
+.tab{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:16px;letter-spacing:.02em;border:2px solid var(--border);background:var(--surface);color:var(--text);padding:8px 14px;border-radius:10px;cursor:pointer}
+.tab .n{color:var(--muted);font-weight:700;margin-right:6px}
+.tab[aria-selected="true"]{background:var(--accent-orange);color:#fff;border-color:var(--accent-orange)}
+.tab[aria-selected="true"] .n{color:#ffe}
+.panel{display:none;animation:fade .25s ease}.panel.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin:18px 0;box-shadow:0 1px 3px rgba(60,40,20,.05)}
+.card.hook{border-left:6px solid var(--accent-yellow)}
+.card.launch{border-left:6px solid var(--accent-orange)}
+.step{display:inline-flex;align-items:center;justify-content:center;min-width:28px;height:28px;border-radius:8px;background:var(--accent-orange);color:#fff;font-family:var(--head);font-weight:700;margin-right:8px}
+.do{background:#FFF6E8;border:1px dashed var(--accent-yellow);border-radius:10px;padding:10px 14px;margin:10px 0}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .do{background:#332c1f}}
+:root[data-theme="dark"] .do{background:#332c1f}
+textarea,input[type=text]{width:100%;font-family:var(--body);font-size:15px;border:1px solid var(--border);border-radius:8px;padding:8px;background:var(--bg);color:var(--text);resize:vertical}
+textarea{min-height:64px}
+select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-family:var(--body);font-size:15px}
+.btn{font-family:var(--head);text-transform:uppercase;letter-spacing:.02em;font-weight:600;font-size:15px;background:var(--accent-orange);color:#fff;border:none;border-radius:10px;padding:10px 16px;cursor:pointer;min-height:44px}
+.btn:hover{background:var(--accent-pink)}
+.btn.ghost{background:transparent;color:var(--accent-orange);border:2px solid var(--accent-orange)}
+.btn.ghost:hover{background:var(--accent-orange);color:#fff}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;align-items:center}
+.copied{color:var(--accent-olive);font-weight:700;font-size:14px}
+.rev{border:1px solid var(--border);border-radius:10px;margin:10px 0;overflow:hidden}
+.rev>button{width:100%;text-align:left;background:var(--surface);border:none;padding:12px 16px;cursor:pointer;font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:16px;color:var(--text);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.rev>button .chev{transition:transform .2s}
+.rev .body{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 16px}
+.rev.open .body{max-height:2200px;padding:0 16px 14px}
+.rev.open .chev{transform:rotate(90deg)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}
+.node{border:2px solid var(--border);background:var(--surface);border-radius:10px;padding:8px 12px;font-weight:600;font-size:14px}
+.node.end{border-color:var(--accent-orange);background:rgba(232,69,28,.08)}
+.arrow{color:var(--accent-terra);font-weight:700;font-size:18px}
+.thinkgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:12px}
+.think{border:1px solid var(--border);border-radius:10px;padding:14px;background:var(--surface)}
+.think .nm{font-family:var(--head);text-transform:uppercase;font-size:20px;font-weight:700;color:var(--accent-orange)}
+.think .big{font-size:13px;color:var(--accent-pink);font-weight:700;margin-bottom:6px}
+.think p{font-size:14px;margin:.3em 0}
+.callout{background:linear-gradient(90deg,rgba(233,30,144,.08),rgba(232,69,28,.08));border:1px solid var(--border);border-left:5px solid var(--accent-pink);border-radius:10px;padding:12px 16px;margin:14px 0}
+.note{background:rgba(107,125,58,.10);border:1px solid var(--border);border-left:5px solid var(--accent-olive);border-radius:10px;padding:12px 16px;margin:14px 0;font-size:15px}
+.gbox{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin:8px 0;background:var(--bg)}
+.gbox.good{border-left:5px solid var(--accent-olive)}
+.gbox.weak{border-left:5px solid var(--accent-terra)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chip{border:2px solid var(--accent-orange);color:var(--accent-orange);background:transparent;border-radius:999px;padding:6px 12px;font-weight:600;font-size:14px;cursor:pointer;font-family:var(--body)}
+.chip:hover{background:var(--accent-orange);color:#fff}
+.parts{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:10px}
+.part{border:1px solid var(--border);border-radius:10px;padding:12px;background:var(--bg)}
+.part .pt{font-family:var(--head);text-transform:uppercase;font-weight:700;color:var(--accent-orange);font-size:16px}
+.part p{font-size:13.5px;margin:.3em 0}
+.stop{display:flex;gap:10px;align-items:flex-start;margin:8px 0}
+.dot{min-width:16px;height:16px;border-radius:50%;margin-top:4px}
+footer{margin-top:30px}.src{font-size:14px;color:var(--muted)}
+.next{font-family:var(--head);text-transform:uppercase;font-weight:700;color:var(--accent-terra);font-size:18px}
+@media(max-width:700px){.split{grid-template-columns:1fr}}
+:focus-visible{outline:3px solid var(--accent-pink);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<div class="wrap">
+<header class="top">
+  <span class="tag">Ideas in Motion · MYP2 · Week 48 · Global interactions</span>
+  <h1>Reason, Rights &amp; the Launch</h1>
+  <p class="kq">Key question: whose “universal” ideas were they — and who got left out?</p>
+  <p class="lead muted">The Enlightenment &amp; the social contract — and the launch of your <strong>Remix Room</strong> investigation. This is where everything from Weeks 43–47 becomes your exhibit.</p>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Lessons">
+  <button class="tab" role="tab" aria-selected="true" aria-controls="l1" id="t1"><span class="n">L1</span>Reason &amp; the social contract</button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="l2" id="t2"><span class="n">L2</span>Launch: The Remix Room</button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="l3" id="t3"><span class="n">L3</span>Your question &amp; plan</button>
+</div>
+
+<!-- ============ LESSON 1 ============ -->
+<section class="panel active" id="l1" role="tabpanel" aria-labelledby="t1">
+  <div class="card hook">
+    <h3>Learning intention</h3>
+    <p>We are learning how Enlightenment thinkers used reason to rethink government and rights — and asking whose ideas they were, and who they left out.</p>
+    <h3 style="margin-top:14px">Warm-up</h3>
+    <p class="lead">Why do you think this period is called <strong>“the Enlightenment”</strong> — the age of <em>light</em>?</p>
+    <textarea id="why" placeholder="I think it’s called that because…"></textarea>
+    <div class="btnrow"><button class="btn" id="copyWhy">Copy my answer</button><span class="copied" hidden>Copied ✓</span></div>
+    <div class="rev"><button aria-expanded="false"><span>One common answer</span><span class="chev">&rsaquo;</span></button>
+      <div class="body"><p>Thinkers used the <strong>light of reason</strong> to push back the “darkness” of blindly accepting authority — applying the evidence-based thinking of the Scientific Revolution (Week 46) to <strong>society, government and rights</strong>. (Notice the metaphor: light vs dark — just like “Dark Ages.” Who gets to call an age bright or dark?)</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">1</span>Key words (you’ve met these)</h2>
+    <div class="rev"><button aria-expanded="false"><span>Reason · scientific method · empiricism</span><span class="chev">&rsaquo;</span></button>
+      <div class="body">
+        <p><strong>Reason</strong> — working things out with logic and evidence rather than just accepting what you’re told.</p>
+        <p><strong>Scientific method</strong> — question → hypothesis → test → conclusion.</p>
+        <p><strong>Empiricism</strong> — knowledge comes from observable evidence.</p>
+        <p>The Enlightenment’s move: apply these to <em>people and power</em>, not just nature.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">2</span>The big idea: the social contract</h2>
+    <p>If we use reason, where does a government’s power really come from? Enlightenment thinkers answered with the <strong>social contract</strong>: an agreement between people and those who rule them.</p>
+    <div class="thinkgrid">
+      <div class="think"><div class="big">Security</div><div class="nm">Hobbes</div><p>Without government, life is “nasty, brutish and short.” People hand power to a strong ruler for safety. (<em>Leviathan</em>, 1651)</p></div>
+      <div class="think"><div class="big">Rights &amp; consent</div><div class="nm">Locke</div><p>People have natural rights (life, liberty, property). Government rules by consent — and can be replaced if it breaks the deal.</p></div>
+      <div class="think"><div class="big">The people are sovereign</div><div class="nm">Rousseau</div><p>“Man is born free, and everywhere he is in chains.” Power belongs to the people as a whole. (<em>The Social Contract</em>, 1762)</p></div>
+      <div class="think"><div class="big">Separate the powers</div><div class="nm">Montesquieu</div><p>Split government into branches so no one holds all the power — the root of “checks and balances.”</p></div>
+      <div class="think"><div class="big">Tolerance</div><div class="nm">Voltaire</div><p>Argued for freedom of speech and religious tolerance; mocked abuses of power and the Church.</p></div>
+      <div class="think"><div class="big">Rights for women</div><div class="nm">Wollstonecraft</div><p>Argued women deserve the same reason-based rights and education as men. (<em>A Vindication…</em>, 1792)</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">3</span>Ideas in motion — the Enlightenment edition</h2>
+    <p>Even the “Age of Reason” ran on things that had travelled. Open each:</p>
+    <div class="rev"><button aria-expanded="false"><span>Where people argued: the coffee-house</span><span class="chev">&rsaquo;</span></button>
+      <div class="body"><p>Enlightenment ideas were debated in <strong>coffee-houses and salons</strong>. Coffee came from Ethiopia and Yemen, and the coffee-house itself spread from the <strong>Ottoman world</strong> into Europe. The “public sphere” had a cross-cultural home.</p></div>
+    </div>
+    <div class="rev"><button aria-expanded="false"><span>A triumph of reason: vaccination</span><span class="chev">&rsaquo;</span></button>
+      <div class="body"><p>Edward Jenner’s cowpox vaccine (1796) built on <strong>variolation</strong> — deliberately exposing people to a mild dose — long practised in <strong>China, India and the Ottoman world</strong>, and brought to England by Lady Mary Wortley Montagu. The medicine thread from the very first gallery walk pays off here.</p></div>
+    </div>
+    <div class="rev"><button aria-expanded="false"><span>Gathering all knowledge: the Encyclopédie</span><span class="chev">&rsaquo;</span></button>
+      <div class="body"><p>Diderot and d’Alembert’s <em>Encyclopédie</em> tried to collect human knowledge in one work — a knowledge <em>system</em>, printed and spread (thanks again to the press).</p></div>
+    </div>
+    <div class="callout"><strong>Comment on “Western ideas.”</strong> The Enlightenment is often celebrated as the birth of “Western” values — reason, rights, democracy. Two honest additions for your exhibit: its <strong>tools and ideas had cross-cultural roots</strong>, and its “universal” rights were <strong>unevenly applied</strong> — many thinkers left out women, enslaved people and colonised peoples. Wollstonecraft was already pointing this out at the time.</div>
+  </div>
+</section>
+
+<!-- ============ LESSON 2 ============ -->
+<section class="panel" id="l2" role="tabpanel" aria-labelledby="t2">
+  <div class="card launch">
+    <h3>It’s time</h3>
+    <p class="lead">You’ve spent five weeks gathering journeys. Now you become a <strong>guest curator</strong> for <strong>The Remix Room</strong> — and build the exhibit for real.</p>
+    <p>Full details are on your <strong>task sheet</strong>; this is the quick version.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">1</span>The brief, in one glance</h2>
+    <div class="split">
+      <div class="gbox"><strong>Role:</strong> guest curator</div>
+      <div class="gbox"><strong>Audience:</strong> museum visitors — all ages, may know nothing of your topic</div>
+      <div class="gbox"><strong>Purpose:</strong> show that ideas travel &amp; change across cultures — so no one culture owns them</div>
+      <div class="gbox"><strong>Assessed:</strong> Criterion B (your investigation) + Criterion C (your exhibit)</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">2</span>What you’ll build</h2>
+    <div class="parts">
+      <div class="part"><div class="pt">Main panel</div><p>A headline + ~150–200 words telling your idea’s journey.</p></div>
+      <div class="part"><div class="pt">Object label(s)</div><p>One or two ~40-word labels for the “artefacts.”</p></div>
+      <div class="part"><div class="pt">Audio-guide script</div><p>~60–90 seconds walking a visitor through the story.</p></div>
+      <div class="part"><div class="pt">Reference list</div><p>Every source, cited in the exhibit and listed.</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">3</span>Choose your idea</h2>
+    <p>Look back at the shortlist you’ve built since Week 43. Tap the ones you’re still considering, then commit to <strong>one</strong>.</p>
+    <div class="chips" id="ideaChips">
+      <button class="chip">Paper &amp; the printing press</button>
+      <button class="chip">The scientific experiment / optics</button>
+      <button class="chip">Algebra &amp; our numbers</button>
+      <button class="chip">Vaccination</button>
+      <button class="chip">The coffee-house &amp; public debate</button>
+      <button class="chip">Astronomy &amp; the model of the sky</button>
+      <button class="chip">Water-raising machines &amp; the crank</button>
+      <button class="chip">Hospitals &amp; medicine</button>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <input type="text" id="ownIdea" placeholder="Or add your own…" style="flex:1;min-width:180px">
+      <button class="btn ghost" id="addOwn">Add</button>
+    </div>
+    <div class="do" style="margin-top:12px">
+      <label style="font-weight:600;font-size:14px">My Remix Room idea is:</label>
+      <textarea id="chosen" style="min-height:40px" placeholder="I’m going to trace the journey of…"></textarea>
+      <div class="btnrow"><button class="btn" id="copyChosen">Lock in my idea</button><span class="copied" hidden>Copied ✓</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Using AI on this task</h3>
+    <div class="stop"><span class="dot" style="background:#3C7A3C"></span><p><strong>Green — fine:</strong> brainstorm which idea to trace; ask AI to explain a tricky source.</p></div>
+    <div class="stop"><span class="dot" style="background:#B8860B"></span><p><strong>Yellow — with care:</strong> check your reference-list format; ask for feedback on clarity.</p></div>
+    <div class="stop"><span class="dot" style="background:#B03030"></span><p><strong>Red — not allowed:</strong> having AI write your panel text, labels or audio script for you.</p></div>
+  </div>
+</section>
+
+<!-- ============ LESSON 3 ============ -->
+<section class="panel" id="l3" role="tabpanel" aria-labelledby="t3">
+  <div class="card hook">
+    <h3>Learning intention</h3>
+    <p>We are learning to <strong>formulate</strong> a clear, focused research question and an action plan to investigate it — the start of Criterion B.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">1</span>What makes a good research question?</h2>
+    <p>A strong question is <strong>clear, focused</strong>, and about your idea’s <strong>journey across cultures</strong>. Compare:</p>
+    <div class="gbox weak"><strong>Too broad:</strong> “What is the printing press?” <span class="muted">— a search, not an investigation.</span></div>
+    <div class="gbox weak"><strong>Not about the journey:</strong> “Who was Gutenberg?” <span class="muted">— a single fact, no cross-cultural story.</span></div>
+    <div class="gbox good"><strong>Just right:</strong> “How did the printing press develop across cultures before it was credited to Europe?” <span class="muted">— clear, focused, and about transmission.</span></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">2</span>Write yours</h2>
+    <div class="do">
+      <label style="font-weight:600;font-size:14px">My research question</label>
+      <textarea id="rq" placeholder="How did … develop / travel across cultures before …?"></textarea>
+      <label style="font-weight:600;font-size:14px;margin-top:8px;display:block">Why it matters (relevance) — why is this worth investigating for the Remix Room?</label>
+      <textarea id="rel"></textarea>
+      <div class="btnrow"><button class="btn" id="copyRQ">Copy my question</button><span class="copied" hidden>Copied ✓</span></div>
+    </div>
+    <p class="muted" style="font-size:13px">Paste this into your research booklet, section 1. Your teacher will give feedback before you go further.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">3</span>Your action plan</h2>
+    <p><strong>Formulate</strong> the first three steps of your investigation. Give each a deadline.</p>
+    <div class="do">
+      <label style="font-weight:600;font-size:14px">Step 1 (what will you do, and by when?)</label>
+      <textarea id="ap1" style="min-height:40px"></textarea>
+      <label style="font-weight:600;font-size:14px;margin-top:8px;display:block">Step 2</label>
+      <textarea id="ap2" style="min-height:40px"></textarea>
+      <label style="font-weight:600;font-size:14px;margin-top:8px;display:block">Step 3</label>
+      <textarea id="ap3" style="min-height:40px"></textarea>
+      <div class="btnrow"><button class="btn" id="copyAP">Copy my action plan</button><span class="copied" hidden>Copied ✓</span></div>
+    </div>
+    <div class="note">You’re ready. The rest of the investigation (gathering sources, building the exhibit) runs in Weeks 49–50, guided by your research booklet.</div>
+    <p class="next" style="margin-top:12px">Next: Weeks 49–50 — investigate, then build and present your Remix Room exhibit.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="bar"></div>
+  <p class="src">Ideas in Motion · MYP2 Individuals &amp; Societies · Week 48 (The Enlightenment &amp; the Remix Room launch). Content adapted from the department Enlightenment deck; the investigation uses the Remix Room task sheet and research booklet.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  function flash(btn){var s=btn.parentElement.querySelector('.copied');if(s){s.hidden=false;setTimeout(function(){s.hidden=true;},1600);}}
+  function copy(text,btn){if(!text.trim()){text='(nothing typed yet)';}
+    try{navigator.clipboard.writeText(text).then(function(){flash(btn);},function(){fb(text,btn);});}catch(e){fb(text,btn);}}
+  function fb(text,btn){var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');flash(btn);}catch(e){}document.body.removeChild(ta);}
+  function val(id){var e=document.getElementById(id);return e?e.value:'';}
+
+  var tabs=[].slice.call(document.querySelectorAll('.tab')),panels=[].slice.call(document.querySelectorAll('.panel'));
+  function select(i){tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i?'true':'false');});
+    panels.forEach(function(p,j){p.classList.toggle('active',j===i);});window.scrollTo({top:0,behavior:'smooth'});}
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){select(i);});
+    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();select((i+1)%tabs.length);tabs[(i+1)%tabs.length].focus();}
+      if(e.key==='ArrowLeft'){e.preventDefault();select((i-1+tabs.length)%tabs.length);tabs[(i-1+tabs.length)%tabs.length].focus();}});});
+
+  document.querySelectorAll('.rev>button').forEach(function(b){b.addEventListener('click',function(){
+    var r=b.parentElement,open=r.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');});});
+
+  document.getElementById('copyWhy').addEventListener('click',function(){copy('Why it’s called the Enlightenment: '+val('why'),this);});
+  document.getElementById('copyChosen').addEventListener('click',function(){copy('MY REMIX ROOM IDEA: '+val('chosen'),this);});
+  document.getElementById('copyRQ').addEventListener('click',function(){copy('RESEARCH QUESTION: '+val('rq')+'\nWHY IT MATTERS: '+val('rel'),this);});
+  document.getElementById('copyAP').addEventListener('click',function(){copy('ACTION PLAN\n1. '+val('ap1')+'\n2. '+val('ap2')+'\n3. '+val('ap3'),this);});
+
+  // chips -> fill chosen box
+  function add(v){v=(v||'').trim();if(!v)return;var box=document.getElementById('chosen');
+    box.value=(box.value?box.value+'\n':'')+v;}
+  document.querySelectorAll('#ideaChips .chip').forEach(function(c){c.addEventListener('click',function(){add(c.textContent);});});
+  document.getElementById('addOwn').addEventListener('click',function(){var inp=document.getElementById('ownIdea');add(inp.value);inp.value='';inp.focus();});
+  document.getElementById('ownIdea').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();document.getElementById('addOwn').click();}});
+})();
+</script>
+</body>
+</html>
+
+</body></html>
